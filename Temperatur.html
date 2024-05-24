@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Temperatur</title>
+    <script>
+	 function farenheit()
+		{
+		var num1 = document.getElementById('num1').value * 1.0;   
+		document.getElementById("result").innerHTML = num1*(9/5)+32;
+		}
+		function celsius()
+		{
+		var num1 = document.getElementById('num1').value * 1.0;   
+		document.getElementById("result").innerHTML = (num1-32)*5/9;
+		}
+		function kelvin()
+		{
+		var num1 = document.getElementById('num1').value * 1.0;   
+		document.getElementById("result").innerHTML = num1+273,15;
+		}
+		function ckelvin()
+		{
+		var num1 = document.getElementById('num1').value * 1.0;   
+		document.getElementById("result").innerHTML = num1-273,15;
+		}
+	</script>
+	</head>
+    <body>
+        <h1 id="myheading">Temperaturrechner</h1>
+		
+		<form>
+			<label for="num1">Temperatur in Celsius:</label>
+			<input type="Number" id="num1" name="num1"><br><br>
+		</form> 
+		
+        <button onclick="farenheit()">
+          Celsius in Fahrenheit
+        </button>
+		<button onclick="celsius()">
+          Fahrenheit in Celsius
+        </button>
+		<button onclick="kelvin()">
+          Celsius in Kelvin
+        </button><button onclick="ckelvin()">
+          Kelvin in Celsius
+        </button>
+		
+		<div>Temperatur in Fahrenheit:
+		<p1 id="result">
+		</p1>
+		</div>
+    </body>
+</html>
