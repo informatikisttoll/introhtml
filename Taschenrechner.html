@@ -47,7 +47,7 @@
 		{
 		var num1 = document.getElementById('num1').value * 1.0;
         var num2 = document.getElementById('num2').value * 1.0;    
-		document.getElementById("result").innerHTML = (num1)**(num2/2)
+		document.getElementById("result").innerHTML = (num1)**(1/num2)
 		}
 		function log2numbers()
 		{
@@ -59,11 +59,11 @@
 	</head>
     <body>
         <h1 id="myheading">Taschenrechner</h1>
-		<h> Addieren</h>
+		
 		<form>
 			<label for="num1">First Number(logarithmierte Zahl):</label>
 			<input type="Number" id="num1" name="num1"><br><br>
-			<label for="num2">Last Number(Hochzahl,n-Wurzel(für Quadratwurzel 1 eingeben)Basis log):</label>
+			<label for="num2">Last Number(Hochzahl,n-Wurzel,Basis log):</label>
 			<input type="Number" id="num2" name="num2"><br><br>
 		</form> 
 		
