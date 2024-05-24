@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculater</title>
+    <script>
+	 function add2numbers()
+		{
+		var num1 = document.getElementById('num1').value * 1.0;
+        var num2 = document.getElementById('num2').value * 1.0;    
+		document.getElementById("result").innerHTML = num1 + num2;
+		}
+		
+		function sub2numbers()
+		{
+		var num1 = document.getElementById('num1').value * 1.0;
+        var num2 = document.getElementById('num2').value * 1.0;    
+		document.getElementById("result").innerHTML = num1 - num2;
+		}
+		
+		function mul2numbers()
+		{
+		var num1 = document.getElementById('num1').value * 1.0;
+        var num2 = document.getElementById('num2').value * 1.0;    
+		document.getElementById("result").innerHTML = num1 * num2;
+		}
+		
+		function div2numbers()
+		{
+		var num1 = document.getElementById('num1').value * 1.0;
+        var num2 = document.getElementById('num2').value * 1.0;    
+		document.getElementById("result").innerHTML = num1 / num2;
+		}
+		
+		function dur2numbers()
+		{
+		var num1 = document.getElementById('num1').value * 1.0;
+        var num2 = document.getElementById('num2').value * 1.0;    
+		document.getElementById("result").innerHTML = (num1 + num2) /2;
+		}
+		function pot2numbers()
+		{
+		var num1 = document.getElementById('num1').value * 1.0;
+        var num2 = document.getElementById('num2').value * 1.0;    
+		document.getElementById("result").innerHTML = (num1)**(num2)
+		}
+		function wur2numbers()
+		{
+		var num1 = document.getElementById('num1').value * 1.0;
+        var num2 = document.getElementById('num2').value * 1.0;    
+		document.getElementById("result").innerHTML = (num1)**(num2/2)
+		}
+		function log2numbers()
+		{
+		var num1 = document.getElementById('num1').value * 1.0;
+        var num2 = document.getElementById('num2').value * 1.0;    
+		document.getElementById("result").innerHTML = Math.log(num1)/Math.log(num2)
+		}
+	</script>
+	</head>
+    <body>
+        <h1 id="myheading">Taschenrechner</h1>
+		<h> Addieren</h>
+		<form>
+			<label for="num1">First Number(logarithmierte Zahl):</label>
+			<input type="Number" id="num1" name="num1"><br><br>
+			<label for="num2">Last Number(Hochzahl,n-Wurzel(für Quadratwurzel 1 eingeben)Basis log):</label>
+			<input type="Number" id="num2" name="num2"><br><br>
+		</form> 
+		
+        <button onclick="add2numbers()">
+          Addieren
+        </button>
+        <button onclick="sub2numbers()">
+           Subtrahieren
+        </button>
+		 <button onclick="mul2numbers()">
+           Multiplizieren
+        </button>
+		 <button onclick="div2numbers()">
+           Dividieren
+        </button>
+		<button onclick="dur2numbers()">
+           Durchschnitt
+        </button>
+		<button onclick="pot2numbers()">
+           Potenzieren 
+        </button>
+		<button onclick="wur2numbers()">
+           Wurzelziehen
+        </button>
+		<button onclick="wur2numbers()">
+           Logarithmus
+        </button>
+		<div>Ergebnis:
+		<p1 id="result">
+		</p1>
+		</div>
+    </body>
+</html>
